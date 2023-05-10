@@ -5,7 +5,6 @@ import com.proto.squareroot.SquareRootResponse;
 import com.proto.squareroot.SquareRootServiceGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -35,3 +34,4 @@ public class SquareRootClientService {
         return client.squareRoot(squareRootRequest);
     }
 }
+
